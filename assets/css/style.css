@@ -1,0 +1,150 @@
+:root {
+  --azul-oscuro: #09376D;
+  --azul-intermedio: #4977A7;
+  --azul-claro: #9FC3E1;
+  --azul-muy-claro: #ccdcf0;
+  --amarillo-dorado: #c09813;
+  --amarillo-hover: #e0b218;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0; padding: 0;
+  display: flex;
+  gap: 20px;
+
+}
+
+/*------Colores personalizados----------*/
+.azul-intermedio{
+  background-color: var(--azul-intermedio);
+}
+.azul-oscuro {
+  background-color: var(--azul-oscuro);
+}
+
+.azul-text {
+  color: var(--azul-oscuro);
+}
+
+.azul-claro {
+  color: var(--bs-info);
+}
+
+/* Quitar borde del botón hamburguesa */
+.navbar-toggler {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Botón iniciar sesión */
+.btn_inse {
+  background-color: var(--amarillo-dorado);
+  transition: all 0.3s ease;
+}
+
+.btn_inse:hover {
+  background-color: var(--amarillo-hover);
+  transform: scale(1.01);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+main {
+  margin-top: 100px;
+
+}
+
+/*barra de navegacion izquierda*/
+
+.BarradeNavegacion {
+  background-color: var(--azul-oscuro);
+  margin-top: 78px;
+  height: 100vh;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinea hacia arriba */
+  padding-top: 20px;
+}
+
+.BarradeNavegacion ul {
+  width: 100%; /* Asegura que la lista use todo el ancho */
+  padding: 0;
+  margin: 0;
+}
+
+.BarradeNavegacion li {
+  width: 100%; /* Asegura que cada li use todo el ancho */
+  list-style: none;
+}
+
+.a_botton_barra {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 15px; /* Espaciado interno para mejor apariencia */
+  box-sizing: border-box;
+}
+
+.i_icon {
+  margin-right: 10px;
+}
+
+ 
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table, th, td {
+  border: 1px solid #ddd;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+input, select, button {
+  padding: 8px;
+  margin: 5px 0;
+}
+.btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+form {
+  margin-bottom: 20px;
+}
+
+spam{
+  margin: 6px;
+}
+
+.oculto{
+  display:none;
+}
+
+.visible{
+  display: block;
+}

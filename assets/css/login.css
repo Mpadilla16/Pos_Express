@@ -1,0 +1,203 @@
+/* Estilos para el Login */
+:root {
+  --azul-oscuro: #09376d;
+  --azul-intermedio: #4977a7;
+  --azul-claro: #9fc3e1;
+  --azul-muy-claro: #ccdcf0;
+  --amarillo-dorado: #c09813;
+  --amarillo-hover: #e0b218;
+  --blanco1: #ffffff;
+  --gris1: #cfcfcffa;
+  --gris2: #585858;
+  --negro: #00000020;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--azul-muy-claro);
+}
+
+/*header*/
+.azul-oscuro {
+  background-color: var(--azul-oscuro) !important;
+}
+
+.azul-oscuro .navbar-brand,
+.azul-oscuro .nav-link {
+  color: var(--blanco1) !important;
+}
+
+.azul-oscuro .nav-link:hover {
+  color: var(--amarillo-hover) !important;
+}
+
+.navbar {
+  padding: 12px 20px;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border-color: var(--blanco1) !important;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.login-container {
+  position: relative;
+  display: flex;
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 0 10px var(--negro);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--blanco1);
+}
+
+/* Panel izquierdo */
+.left-panel {
+  width: 50%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blanco1);
+}
+
+.left-panel h1 {
+  color: var(--azul-intermedio);
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid var(--gris1);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco1);
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px !important;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: var(--azul-intermedio);
+}
+
+.forgot {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--azul-claro);
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Panel derecho azul (animado al hacer hover) */
+.right-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--azul-oscuro);
+  color: var(--blanco1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s ease;
+  z-index: 2;
+}
+
+.right-panel:hover {
+  transform: translateX(-100%);
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 4px var(--blanco1) solid;
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 3;
+  width: 220px;
+  height: 220px;
+  box-sizing: border-box;
+  background-color: var(--azul-intermedio);
+}
+
+.logo-box img {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#logoHover {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#logoHover span {
+  display: block;
+}
+
+.system-info {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Texto revelado detrás del panel azul */
+.system-description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  background-color: var(--blanco1);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--gris2);
+}

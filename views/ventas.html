@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ventas - POS Express</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header><h1>Ventas</h1></header>
+    <main>
+        <input type="text" id="buscar-producto" placeholder="Buscar producto...">
+        <ul id="lista-productos"></ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th><th>Cantidad</th><th>Precio</th><th>Total</th><th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="carrito-tbody"></tbody>
+        </table>
+        <p id="total-venta">Total: $0</p>
+        <button>Procesar Venta</button>
+    </main>
+</body>
+</html>
