@@ -34,13 +34,13 @@ Te dirige al pie de página, donde encontrarás información para comunicarte co
 
 ---
 
-### 🔐 Iniciar Sesión  
+## 🔐 Iniciar Sesión  
 **Enlace:** `login.html`  
 Abre el formulario de inicio de sesión para ingresar al sistema si ya tienes una cuenta registrada.
 
 Sitio en vivo https://mpadilla16.github.io/Pos_Express/views/index.html
 
-#### Screenshot
+### Screenshot
 ![Inicio](screenshot/Inicio.png)
 Sitio en vivo https://mpadilla16.github.io/Pos_Express/views/index.html
 
@@ -55,7 +55,7 @@ La facilidad de uso y su interfaz amigable.
 #### ✅ Recomendaciones
 📱 La página está diseñada para verse correctamente en dispositivos móviles gracias a Bootstrap, así que puedes acceder desde tu celular o tablet sin problemas.
 
-#### 🔐 Recuerda que para acceder al sistema debes contar con un usuario y contraseña válidos. Si no tienes uno, contacta con el administrador de POS Express.
+### 🔐 Recuerda que para acceder al sistema debes contar con un usuario y contraseña válidos. Si no tienes uno, contacta con el administrador de POS Express.
 
 ## 🔐 Iniciar Sesión en POS Express
 
@@ -108,3 +108,108 @@ El formulario de cambio de contraseña permite ingresar dos campos:
 - **Confirmar contraseña**
 ![Cambio de contrasena](screenshot/Cambio_de_contrasena.jpeg)
 ---
+
+# 📊 POS Express - Dashboard Principal
+
+El **Dashboard Principal** es la vista central del sistema POS Express. Después de iniciar sesión y completar el proceso de cambio de contraseña (si aplica), el usuario es redirigido automáticamente a esta pantalla.
+
+---
+
+### 🎯 Funciones disponibles en el Dashboard
+
+El panel principal proporciona acceso rápido a las principales funcionalidades del sistema a través de un conjunto de tarjetas interactivas.
+
+
+### 🔹 Gestión de Usuarios 
+- Permite gestionar las cuentas de usuarios del sistema.
+- Solo accesible para administradores o usuarios con permisos adecuados.
+- Representado por el ícono de usuario.
+
+---
+
+## 🧭 Barra de navegación
+
+La parte superior incluye:
+
+- Logo e identificación del sistema.
+- Nombre del usuario activo (aún por implementar dinámicamente).
+- Botón para **cerrar sesión**, que redirige al `index.html`.
+
+---
+
+## 📢 Publicidad / Información adicional
+
+En el lateral derecho del dashboard, se muestra una imagen promocional o informativa.
+
+---
+
+## 🔚 Pie de página (Footer)
+
+Incluye:
+- Enlaces rápidos (características, soporte, contacto).
+- Información de contacto: email, teléfono, dirección.
+- Enlaces legales (términos, política de privacidad).
+- Íconos sociales (Facebook, Instagram, X).
+
+---
+
+## ⚠️ Seguridad
+
+El botón **"Cerrar Sesión"** redirige a la página de inicio (`index.html`).  
+🛡️ **Nota:** Aún falta implementar lógica adicional para prevenir el acceso al dashboard mediante el botón de retroceso del navegador después de cerrar sesión.
+
+---
+
+### Screenshot
+![Dasboard](screenshot/Dasboard.jpeg)
+
+# Sistema de Gestión de Usuarios
+
+Este proyecto proporciona una interfaz para la gestión de usuarios dentro de un sistema, con funcionalidades de registro, edición y eliminación de usuarios, así como una vista de la tabla con los usuarios registrados.
+
+### ✨ Cabecera (Navbar)
+
+La cabecera incluye el logotipo y el menú de navegación con enlaces a distintas secciones del sistema, tales como:
+- **Inicio**
+- **Características**
+- **Soporte**
+  
+### 🔧 Barra Lateral (Sidebar)
+
+La barra lateral proporciona acceso rápido a las siguientes funciones del sistema:
+- **Ventas**
+- **Dashboard**
+- **Productos**
+- **Reportes**
+- **Usuarios**
+
+### 📝 Formulario de Registro de Usuario
+
+Los usuarios pueden ser registrados a través de un formulario que solicita los siguientes datos:
+- **Nombre de usuario**
+- **Contraseña**
+- **Rol** (Administrador, Cajero)
+
+### 📋 Tabla de Usuarios
+
+La tabla de usuarios muestra una lista con los usuarios registrados, con las siguientes columnas:
+- **ID**
+- **Nombre de usuario**
+- **Rol**
+- **Acciones** (editar o eliminar)
+- **Fecha de registro** (actualmente no implementada en el ejemplo)
+  
+Además, incluye opciones para editar o eliminar cada usuario.
+
+### 🖊 Formulario de Edición de Usuario
+
+El formulario de edición aparece cuando el usuario selecciona la opción de editar desde la tabla de usuarios. Este formulario permite cambiar:
+- **Nombre de usuario**
+- **Correo electrónico** del usuario seleccionado
+
+### ⚙ Funciones Adicionales
+
+- `toggleFormulario()`: Función en JavaScript para mostrar u ocultar el formulario de edición de usuarios.
+
+### Screenshot
+![Gestion de usuario](screenshot/Gestion_de_usuario.jpeg)
