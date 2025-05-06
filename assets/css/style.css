@@ -71,13 +71,14 @@ main {
 
 .BarradeNavegacion {
   background-color: var(--azul-oscuro);
-  margin-top: 78px;
+  margin-top: 72px;
   height: 100vh;
   width: 250px;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Alinea hacia arriba */
+  align-items: flex-start; /* Alinea hacia arriba htozontal */
   padding-top: 20px;
+ 
 }
 
 .BarradeNavegacion ul {
@@ -88,7 +89,7 @@ main {
 
 .BarradeNavegacion li {
   width: 100%; /* Asegura que cada li use todo el ancho */
-  list-style: none;
+  display: inline;
 }
 
 .a_botton_barra {
