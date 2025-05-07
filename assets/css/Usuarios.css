@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,18 +15,16 @@
     --amarillo-dorado: #c09813;
     --amarillo-hover: #e0b218;
 }
-
 /* Body */
 body {
     height: 100vh;
-    background-color: var(--color-bg);
-    font-family: "Raleway";
+    background-color: white;
+    font-family: 'Raleway';
 }
 main {
-  display: flex;
-  gap: 40px;
-  
-  }
+    display: flex;
+    gap: 40px;
+}
 
 /*barra de navegacion*/
 nav {
@@ -61,9 +61,10 @@ nav {
     outline: none !important;
     box-shadow: none !important;
 }
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
+}
 
 /* Botón iniciar sesión */
 .btn_inse {
@@ -77,11 +78,12 @@ nav {
     color: rgb(0, 0, 0);
     font-weight: 500;
 }
+
 /*----------------------------------------------*/
 
 /**sidebar*/
 .sidebar {
-    position:sticky;
+    position: sticky;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,20 +118,20 @@ nav {
     border-radius: 50%;
     background-color: white;
     color: #757575;
-    box-shadow: 2px 2px 5px  rgb(117, 117, 117);
+    box-shadow: 2px 2px 5px rgb(117, 117, 117);
     cursor: pointer;
     transition: rigth 0.3s ease;
 }
+
 .menu-btn i {
     font-size: 1.5rem;
 }
-
 .sidebar.minimize .menu-btn {
     right: -1rem;
 }
+
 .sidebar.minimize .menu-btn i {
     transform: rotate(180deg);
-
 }
 
 /*brand*/
@@ -162,7 +164,7 @@ nav {
     flex-direction: column;
     align-items: center;
     margin: 45px 0;
-    
+
 }
 
 /*menu*/
@@ -171,8 +173,8 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    
-    
+
+
 
 }
 
@@ -180,7 +182,7 @@ nav {
     position: relative;
     list-style: none;
     overflow: hidden;
-    
+
 }
 
 .menu .menu-link {
@@ -194,10 +196,10 @@ nav {
 
 .menu-item:hover .menu-link,
 .sub-menu .sub-menu-link:hover,
-.menu-btn:hover{
+.menu-btn:hover {
     color: rgb(0, 0, 0);
     background-color: var(--amarillo-dorado);
-    
+
 }
 
 .menu-link i {
@@ -213,14 +215,22 @@ nav {
 .menu-item.sub-menu-toggle .menu-link i:last-child {
     transform: rotate(180deg);
 }
-
 .menu-link span {
     font-size: 0.8rem;
     font-weight: 500;
 }
-.menu-link.activo{
+
+.menu-link.activo {
     background-color: var(--amarillo-dorado);
     border-radius: 0.3rem;
+}
+
+.oculto {
+    display: none;
+}
+
+.visible {
+    display: block;
 }
 
 
@@ -228,34 +238,31 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 30px;
-  }
-  table, th, td {
+}
+
+table,
+th,
+td {
     border: 1px solid #ddd;
-  }
-  th, td {
+}
+
+th,
+td {
     padding: 10px;
     text-align: center;
-  }
-  input, select, button {
+}
+
+input,
+select,
+button {
     padding: 8px;
     margin: 5px 0;
-  }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
-  spam{
-    margin: 6px;
-  }
-  
-  
-  
-  .oculto{
-    display:none;
-  }
-  
-  .visible{
-    display: block;
-  }
+}
 
+form {
+    margin-bottom: 20px;
+}
+
+spam {
+    margin: 6px;
+}
