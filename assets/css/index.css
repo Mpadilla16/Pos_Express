@@ -20,11 +20,11 @@ body {
   background-color: var(--azul-oscuro);
 }
 
-.azul-text {
+.azul-text-primario {
   color: var(--azul-oscuro);
 }
 
-.azul-claro {
+.azul-text-secundario {
   color: var(--bs-info);
 }
 
@@ -55,7 +55,7 @@ body {
 
 .btn_inse:hover {
   background-color: var(--amarillo-hover);
-  transform: scale(1.01);
+  transform: scale(1);
   color: rgb(0, 0, 0);
   font-weight: 500;
 }
