@@ -1,4 +1,4 @@
-const menuItemsDropDown = document.querySelectorAll('.menu-item-dropdown');
+
 const sidebar = document.getElementById('sidebar');
 const menuBtn = document.getElementById('menu-btn');
 
