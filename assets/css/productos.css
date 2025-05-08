@@ -233,6 +233,7 @@ main {
   }
   .sidebar{
     display: none;
+
     
   }
   .sidebar-btn{
@@ -245,10 +246,14 @@ main {
     display: none;
     width: 4.94rem;
     
+    
   }
   body.sidebar-hidden .sidebar{
     display: flex;
     width: 17rem;
+    position: fixed;
+    z-index: 100;
+    
     
   }
   body.sidebar-hidden .sidebar-btn i:last-child{
