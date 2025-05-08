@@ -214,3 +214,41 @@ main {
 .visible {
   display: block;
 }
+
+/*boton del menu responsivo*/
+.sidebar-btn{
+  display: none;
+}
+
+/*Para hacer responsiva el menu lateral*/
+@media (max-width:700px) or (max-height:683){
+  #menu-btn{
+    display: none;
+  }
+  .sidebar{
+    display: none;
+    
+  }
+  .sidebar-btn{
+    display: flex;
+    margin-top: 31px;
+    right: 1rem;
+    padding: 1.2rem;
+  }
+  .sidebar-btn i:last-child{
+    display: none;
+    width: 4.94rem;
+    
+  }
+  body.sidebar-hidden .sidebar{
+    display: flex;
+    width: 17rem;
+    position: static;
+  }
+  body.sidebar-hidden .sidebar-btn i:last-child{
+    display: flex;
+  }
+  body.sidebar-hidden .sidebar-btn i:first-child{
+    display: none;
+  }
+}
