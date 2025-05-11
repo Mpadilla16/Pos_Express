@@ -201,11 +201,25 @@ main {
   display: block;
 }
 
-
 /*boton del menu responsivo*/
 .sidebar-btn {
   display: none;
 }
+/*--------------------------------*/
+
+/* Mopdal Agregar producto*/
+.modal-header div p{
+  font-size:12px;
+}
+.modal-body form input::placeholder{
+  font-size:13px;
+  font-style: italic;
+}
+
+
+
+
+
 
 /*Para hacer responsiva el menu lateral*/
 @media (max-width:700px) or (max-height:683) {

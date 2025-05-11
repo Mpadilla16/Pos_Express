@@ -224,7 +224,7 @@ nav {
     background-color: var(--amarillo-dorado);
     border-radius: 0.3rem;
 }
-
+/*Formlario para editar usuario*/
 .oculto {
     display: none;
 }
@@ -232,6 +232,7 @@ nav {
 .visible {
     display: block;
 }
+/*-------------------------*/
 
 
 table {
