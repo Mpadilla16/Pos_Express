@@ -37,6 +37,10 @@ main {
 .azul-claro-secundario {
   color: var(--bs-info);
 }
+.bg-gray-lightest {
+  background-color: #f1f1f1; 
+}
+
 
 /* Quitar borde del botón hamburguesa */
 .navbar-toggler {
@@ -214,3 +218,4 @@ main {
 .visible {
   display: block;
 }
+
