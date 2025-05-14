@@ -38,11 +38,11 @@ Te dirige al pie de página, donde encontrarás información para comunicarte co
 **Enlace:** `login.html`  
 Abre el formulario de inicio de sesión para ingresar al sistema si ya tienes una cuenta registrada.
 
-Sitio en vivo https://mpadilla16.github.io/Pos_Express/views/index.html
+Sitio en vivo https://mpadilla16.github.io/Pos_Express/frontend/views/index.html
 
 ### Screenshot
 ![Inicio](screenshot/Inicio.png)
-Sitio en vivo https://mpadilla16.github.io/Pos_Express/views/index.html
+Sitio en vivo https://mpadilla16.github.io/Pos_Express/frontend/views/index.html
 
 #### ¿Qué más puedes ver?
 Además del menú de navegación, la página incluye:
