@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <!----Barra de navegacion-sidebar----->
   <nav class="navbar navbar-expand-lg azul-oscuro fixed-top">
     <div class="container-fluid mx-lg-3">
       <div>
@@ -55,9 +56,14 @@
       </div>
     </div>
   </nav>
+  <!------------------------------------>
 
   <main class="mt-5">
-    <!-------------------------Menu lateral------------------------------>
+    <!---------------------Menu lateral--Sidebar------------------->
+    <!--Boton del sidebar solo aparece en pantallas md y sm-->
+  <div class="sidebar-btn-menu d-flex d-md-none" id="sidebar-btn">
+    <i class='bx bx-chevron-right'></i>
+  </div>
     <section class="sidebar" id="sidebar">
       <div class="header">
         <div class="menu-btn" id="menu-btn">
@@ -109,8 +115,8 @@
       </div>
 
       <!-----Ganancias------>
-      <div class="container ">
-        <div class=" d-flex flex-column flex-lg-row justify-content-around mt-3">
+      <div class="">
+        <div class=" d-flex  flex-column flex-lg-row justify-content-around mt-3">
 
           <div class="d-flex p-3 border border-1 border-secondary border-opacity-50 rounded-1">
             <article class="me-5">

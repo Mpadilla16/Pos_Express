@@ -141,18 +141,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
-
-
 }
-
 .menu .menu-item {
   position: relative;
   list-style: none;
   overflow: hidden;
-
 }
-
 .menu .menu-link {
   display: flex;
   padding: 0.55rem 0;
@@ -161,10 +155,11 @@ main {
   border-radius: 0.3rem;
   background-color: white;
 }
-
 .menu-item:hover .menu-link,
 .sub-menu .sub-menu-link:hover,
-.menu-btn:hover {
+.menu-btn:hover,
+.sidebar-btn-menu:hover
+ {
   color: rgb(0, 0, 0);
   background-color: var(--amarillo-dorado);
 
@@ -240,10 +235,6 @@ main {
     transition: rigth 0.3s ease;
     position: absolute;
     margin-top: 11px;
-    
-    
-    
-    
   }
   .sidebar-btn-menu i{
     font-size: 1.5rem;
@@ -261,6 +252,7 @@ main {
     width: 17rem;
     position: fixed;
     z-index: 100;
+    
 
 
   }

@@ -7,7 +7,7 @@
   <!---Bootstrap--->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
-    <!--Iconos-->
+  <!--Iconos-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!--Hoja de estilos-->
   <link rel="stylesheet" href="../assets/css/ventas.css">
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <!----Barra de navegacion-sidebar----->
   <nav class="navbar navbar-expand-lg azul-oscuro fixed-top">
     <div class="container-fluid mx-lg-3">
       <div>
@@ -56,9 +57,14 @@
       </div>
     </div>
   </nav>
+  <!------------------------------------>
 
   <main class="mt-5">
-    <!-------------------------Menu lateral------------------------------>
+    <!---------------------Menu lateral--Sidebar------------------->
+    <!--Boton del sidebar solo aparece en pantallas md y sm-->
+    <div class="sidebar-btn-menu d-flex d-md-none" id="sidebar-btn">
+      <i class='bx bx-chevron-right'></i>
+    </div>
     <section class="sidebar" id="sidebar">
       <div class="header">
         <div class="menu-btn" id="menu-btn">
@@ -103,38 +109,38 @@
       </div>
     </section>
     <!----------------------------------------------------->
-    
+
     <!--Ventas-->
     <section class="mt-5 mt-5 min-vh-100 mt-5 w-100 mx-2 card shadow mx-2 card shadow">
-     <div>
-      <input type="text" id="buscar-producto" placeholder="Buscar producto...">
-      <ul id="lista-productos"></ul>
-      <table>
-        <thead>
-          <tr>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Precio</th>
-            <th>Total</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody id="carrito-tbody"></tbody>
-      </table>
-      <p id="total-venta">Total: $0</p>
-      <button>Procesar Venta</button>
-     </div>
+      <div>
+        <input type="text" id="buscar-producto" placeholder="Buscar producto...">
+        <ul id="lista-productos"></ul>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Total</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="carrito-tbody"></tbody>
+        </table>
+        <p id="total-venta">Total: $0</p>
+        <button>Procesar Venta</button>
+      </div>
     </section>
   </main>
 
-  
 
-   <!--Script-->
-   <script src="../controllers/sidebar.js"></script><!--Menu lateral-->
-   <!--Bootstrap-->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-     crossorigin="anonymous"></script>
+
+  <!--Script-->
+  <script src="../controllers/sidebar.js"></script><!--Menu lateral-->
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
