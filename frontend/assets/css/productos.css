@@ -19,6 +19,7 @@ body {
 main {
   display: flex;
   gap: 40px;
+ 
 
 }
 
@@ -217,37 +218,32 @@ main {
 }
 
 
-
-
-
-
 /*Para hacer responsiva el menu lateral*/
 @media (max-width:700px) or (max-height:683) {
-  #menu-btn {
-    display: none;
-  }
+
 
   .sidebar {
     display: none;
   }
-  .sidebar-btn {
-    display: flex;
-    margin-top: 31px;
-    right: 1rem;
-    padding: 1.2rem;
-  }
+
   .sidebar-btn-menu {
     align-items: center;
     justify-content: center;
     width: 1.75rem;
     height: 1.75rem;
-    border-radius: 50%;
+    border-radius: 0 25% 25% 0;
     background-color: white;
     color: #757575;
     box-shadow: 2px 2px 5px rgb(117, 117, 117);
-    padding: 1.2rem;
+    padding: 1rem;
     cursor: pointer;
     transition: rigth 0.3s ease;
+    position: absolute;
+    margin-top: 11px;
+    
+    
+    
+    
   }
   .sidebar-btn-menu i{
     font-size: 1.5rem;
@@ -269,9 +265,6 @@ main {
 
   }
 
-  body.sidebar-hidden .sidebar-btn i:last-child {
-    display: flex;
-  }
 
   body.sidebar-hidden .sidebar-btn i:first-child {
     display: none;
