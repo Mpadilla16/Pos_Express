@@ -230,6 +230,7 @@ main {
 
   .sidebar {
     display: none;
+    
   }
 
   .sidebar-btn-menu {
@@ -260,6 +261,7 @@ main {
     width: 17rem;
     position: fixed;
     z-index: 100;
+    
 
   }
   body.sidebar-hidden .sidebar-btn i:first-child {
