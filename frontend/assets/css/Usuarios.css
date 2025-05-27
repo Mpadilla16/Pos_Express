@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --azul-oscuro: #09376D;
+    --azul-intermedio: #4977A7;
+    --azul-claro: #9FC3E1;
+    --azul-muy-claro: #ccdcf0;
+    --amarillo-dorado: #c09813;
+    --amarillo-hover: #e0b218;
+}
+/* Body */
+body {
+    height: 100vh;
+    background-color: white;
+    font-family: 'Raleway';
+}
+main {
+    display: flex;
+    gap: 40px;
+}
+
+/*barra de navegacion*/
+nav {
+    background-color: var(--azul-oscuro);
+}
+
+/*------Colores personalizados----------*/
+.azul-intermedio {
+    background-color: var(--azul-intermedio);
+}
+
+.azul-oscuro {
+    background-color: var(--azul-oscuro);
+}
+
+.azul-text-primario {
+    color: var(--azul-oscuro);
+}
+
+.azul-text-secundario {
+    color: var(--bs-info);
+}
+
+/* Quitar borde del botón hamburguesa */
+.navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Botón iniciar sesión */
+.btn_inse {
+    background-color: var(--amarillo-dorado);
+    transition: all 0.3s ease;
+}
+
+.btn_inse:hover {
+    background-color: var(--amarillo-hover);
+    transform: scale(1.01);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+/*----------------------------------------------*/
+
+/*Usuarios*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+input,
+select,
+button {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+spam {
+    margin: 6px;
+}
+
+
+/**sidebar*/
+.sidebar {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 17rem;
+    height: 100vh;
+    padding: 1.4rem 1rem 0 1rem;
+    background-color: var(--azul-oscuro);
+    box-shadow: 1px 0px 10px rgb(230, 230, 230);
+    transition: width 0.5s ease;
+}
+
+.sidebar.minimize {
+    width: 4.94rem;
+}
+
+/*header*/
+.header {
+    width: 100%;
+}
+
+/*MEnu button*/
+.menu-btn {
+    position: absolute;
+    top: 3.8%;
+    right: -0.87rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background-color: white;
+    color: #757575;
+    box-shadow: 2px 2px 5px rgb(117, 117, 117);
+    cursor: pointer;
+    transition: rigth 0.3s ease;
+}
+
+.menu-btn i {
+    font-size: 1.5rem;
+}
+.sidebar.minimize .menu-btn {
+    right: -1rem;
+}
+
+.sidebar.minimize .menu-btn i {
+    transform: rotate(180deg);
+}
+
+/*brand*/
+.brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding-left: 0.455rem;
+    margin-bottom: 1.8rem;
+    overflow: hidden;
+}
+
+.brand img {
+    width: 2rem;
+}
+
+.brand span {
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+/*Menu container*/
+.menu-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 52px 0;
+
+}
+
+/*menu*/
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+
+
+}
+
+.menu .menu-item {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+
+}
+
+.menu .menu-link {
+    display: flex;
+    padding: 0.55rem 0;
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    border-radius: 0.3rem;
+    background-color: white;
+}
+
+.menu-item:hover .menu-link,
+.sub-menu .sub-menu-link:hover,
+.menu-btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: var(--amarillo-dorado);
+
+}
+
+.menu-link i {
+    font-size: 1.35rem;
+    padding: 0 0.8rem;
+}
+
+.menu-link i:last-child {
+    margin-left: auto;
+    transition: transform 0.6s ease;
+}
+
+.menu-item.sub-menu-toggle .menu-link i:last-child {
+    transform: rotate(180deg);
+}
+.menu-link span {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.menu-link.activo {
+    background-color: var(--amarillo-dorado);
+    border-radius: 0.3rem;
+}
+/*Formlario para editar usuario*/
+.oculto {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+/*-------------------------*/
+
+
+
+/*boton del menu responsivo*/
+.sidebar-btn {
+  display: none;
+}
+/*--------------------------------*/
+
+
+
+
+/*Para hacer responsiva el menu lateral*/
+@media (max-width:700px) or (max-height:683) {
+
+
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar-btn-menu {
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 0 25% 25% 0;
+    background-color: white;
+    color: #757575;
+    box-shadow: 2px 2px 5px rgb(117, 117, 117);
+    padding: 1rem;
+    cursor: pointer;
+    transition: rigth 0.3s ease;
+    position: absolute;
+    margin-top: 11px;
+  }
+  .sidebar-btn-menu i{
+    font-size: 1.5rem;
+  }
+
+  .sidebar-btn i:last-child {
+    display: none;
+    width: 4.94rem;
+
+
+  }
+
+  body.sidebar-hidden .sidebar {
+    display: flex;
+    width: 17rem;
+    position: fixed;
+    z-index: 100;
+  }
+  body.sidebar-hidden .sidebar-btn i:first-child {
+    display: none;
+  }
+}

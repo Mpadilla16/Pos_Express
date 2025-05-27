@@ -1,0 +1,176 @@
+
+:root {
+  --azul-oscuro: #09376D;
+  --azul-intermedio: #4977A7;
+  --azul-claro: #9FC3E1;
+  --azul-muy-claro: #ccdcf0;
+  --amarillo-dorado: #c09813;
+  --amarillo-hover: #e0b218;
+}
+
+body {
+  color: white;
+}
+
+/*------Colores personalizados----------*/
+.azul-intermedio{
+  background-color: var(--azul-intermedio);
+}
+.azul-oscuro {
+  background-color: var(--azul-oscuro);
+}
+
+.azul-text-primario {
+  color: var(--azul-oscuro);
+}
+
+.azul-text-secundario {
+  color: var(--bs-info);
+}
+
+/* Quitar borde del botón hamburguesa */
+.navbar-toggler {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Botón iniciar sesión */
+.btn_inse {
+  background-color: var(--amarillo-dorado);
+  transition: all 0.3s ease;
+}
+
+.btn_inse:hover {
+  background-color: var(--amarillo-hover);
+  transform: scale(1);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+/* Sección bienvenida */
+.titulo {
+  font-family: 'Raleway';
+}
+
+.subtitulo_1,
+.subtitulo_2 {
+  font-family: "Raleway";
+  color: var(--bs-info);
+}
+
+.descripcion {
+  font-size: 0.76rem;
+}
+
+/* Sección de tarjetas */
+.tarjeta1_descripcion p {
+  font-size: 0.75rem;
+}
+
+.tarjeta2_descripcion p,
+.tarjeta3_descripcion p,
+.tarjeta4_descripcion p {
+  font-size: 1rem;
+}
+
+.tarjeta-1 {
+  background-color: var(--azul-oscuro);
+}
+
+.tarjeta-2 {
+  background-color: var(--azul-intermedio);
+}
+
+.tarjeta-3 {
+  background-color: var(--azul-claro);
+  color: var(--azul-oscuro);
+}
+
+.tarjeta-4 {
+  background-color: var(--azul-muy-claro);
+  color: var(--azul-oscuro);
+}
+
+.tarjeta-1,
+.tarjeta-2,
+.tarjeta-3,
+.tarjeta-4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.tarjeta-1:hover,
+.tarjeta-2:hover,
+.tarjeta-3:hover,
+.tarjeta-4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección funciones */
+.text_servicios p {
+  font-size: 0.50rem;
+}
+
+@media (min-width: 992px) {
+   /*seccion de bienvenida*/
+  .subtitulo_2 {
+    font-size: 1.76rem !important;
+  }
+
+  .titulo {
+    font-size: 2.5rem !important;
+  }
+  /*-----------------------*/
+
+  .li_text {
+    font-size: 1.1rem !important;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  /*seccion de bienvenida*/
+  .titulo {
+    font-size: 3.8rem!important;
+  }
+
+  .subtitulo_2{
+    font-size: 2.4rem!important;
+  }
+
+  .subtitulo_1{
+    font-size: 1.8rem!important;
+  }
+
+  .btn_bienvenida{
+    font-size: 1rem!important;
+  }
+  /*------------------------*/
+
+  /*Tarjetas*/
+  .titulo_tarjetas{
+    font-size: 2rem!important;
+  }
+
+  .tarjeta-2 p,
+  .tarjeta-3 p,
+  .tarjeta-4 p{
+    font-size: 1.5rem!important;
+
+  }
+}

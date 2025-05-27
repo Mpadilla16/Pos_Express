@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard Principal</title>
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="../assets/image/logo.png" alt="Inicio" width="30" />
+      <span>POS Express</span>
+    </div>
+    <nav>
+      <span>Inicio</span>
+      <span>#Nombre del Usuario</span>
+      <button class="logout">Cerrar Sesión</button>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="cards">
+      <div class="card">
+        <a href="../views/ventas.html"><img src="../assets/image/Ventas.png" alt="Ventas" />
+          <span class="label"></span></a>
+      </div>
+      <div class="card">
+        <a href="../views/productos.html"><img src="../assets/image/Productos.png" alt="Productos" />
+          <span class="label"></span></a>
+      </div>
+      <div class="card">
+        <a href="../views/reportes.html"><img src="../assets/image/Reportes.png" alt="Reportes" />
+          <span class="label"></span></a>
+      </div>
+      <div class="card">
+        <a href="../views/usuarios.html"><img src="../assets/image/User.png" alt="Gestión de Usuarios" />
+          <span class="label"></span>
+      </div></a>
+    </section>
+
+    <aside class="promo">
+      <img src="../assets/image/Banner_Publicitario.png" alt="Promo" />
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="links">
+      <strong>ENLACES RÁPIDOS</strong>
+      <a href="#">Características</a>
+      <a href="#">Soporte</a>
+      <a href="#">Contacto</a>
+    </div>
+    <div class="contacto">
+      <strong>CONTACTO</strong>
+      <p>Email: info@posexpress.co</p>
+      <p>Teléfono: (57) 300-123-4567</p>
+      <p>Dirección: Cúcuta, Norte de Santander</p>
+      <p><a href="#">Términos de uso</a></p>
+    </div>
+    <div class="social">
+      <strong>SÍGUENOS</strong>
+      <div class="icons">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111392.png" width="24" alt="Facebook" />
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" width="24" alt="Instagram" />
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="24" alt="X" />
+      </div>
+      <a href="#">Política de privacidad</a>
+    </div>
+  </footer>
+  <script>
+    document.querySelector(".logout").addEventListener("click", function () {
+      // Simula el cierre de sesión redirigiendo a otra página
+      window.location.href = "index.html"; //Falta cambiar la seguridad para que al dar  retroceso no cargue de nuevo la pagina
+    });
+  </script>
+</body>
+
+</html>

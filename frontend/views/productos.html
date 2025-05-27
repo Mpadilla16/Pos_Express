@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <!--Iconos-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--Hoja de estilos-->
+  <link rel="stylesheet" href="../assets/css/productos.css">
+  <title>Productos - POS Express</title>
+</head>
+
+<body>
+  <!----Barra de navegacion-sidebar----->
+  <nav class="navbar navbar-expand-lg azul-oscuro fixed-top">
+    <div class="container-fluid mx-lg-3">
+      <div>
+        <a class="navbar-brand fw-bold text-white fs-3" href="../views/index.html">
+          <img src="../assets/image/logo.png" alt="Logo" style="height: 40px; margin-right: 10px" />
+          Pos Express
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-lg-end" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mt-4 gap-lg-3 my-lg-2">
+          <li class="nav-item">
+            <a class="nav-link text-white fs-6 fw-semibold active" aria-current="page"
+              href="../views/index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-6 fw-semibold" aria-current="page"
+              href="#Caracteristicas">Características</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-6 fw-semibold" aria-current="page">Soporte</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link text-white fs-6 fw-semibold" aria-current="page">Contacto</a>
+          </li>
+          <li class="nav-item btn_inse rounded-1">
+            <a href="login.html" class=" btn-sm nav-link text-dark fs-6 p-2 fw-semibold border-0"
+              aria-current="page">Cerrar Sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!------------------------------------>
+
+
+  <main class="mt-5">
+    <!---------------------Menu lateral--Sidebar------------------->
+    <!--Boton del sidebar solo aparece en pantallas md y sm-->
+  <div class="sidebar-btn-menu d-flex d-md-none" id="sidebar-btn">
+    <i class='bx bx-chevron-right'></i>
+  </div>
+    <section class="sidebar" id="sidebar">
+      <div class="header">
+        <div class="menu-btn" id="menu-btn">
+          <i class='bx bxs-chevron-left'></i>
+        </div>
+      </div>
+      <div class="menu-container">
+        <ul class="menu ms-0 ps-0">
+          <li class="menu-item menu-item-static">
+            <a href="../views/dashboard.html" class="menu-link">
+              <i class='bx bxs-dashboard'></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-item menu-item-static">
+            <a href="../views/ventas.html" class="menu-link">
+              <i class='bx bx-select-multiple'></i>
+              <span>Ventas</span>
+            </a>
+          </li>
+          <li class="menu-item menu-item-static">
+            <a href="../views/productos.html" class="menu-link  activo">
+              <i class='bx bxl-product-hunt'></i>
+              <span>Productos</span>
+            </a>
+          </li>
+          <li class="menu-item menu-item-static">
+            <a href="../views/reportes.html" class="menu-link">
+              <i class='bx bxs-report'></i>
+              <span>Reportes</span>
+            </a>
+          </li>
+          <li class="menu-item menu-item-static ">
+            <a href="../views/usuarios.html" class="menu-link">
+              <i class='bx bxs-user-detail'></i>
+              <span>Usuarios</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+    <!------------------------------------------------------------->
+
+    <!-----------Productos------->
+    <section class="mt-5 min w-100 mx-2 card shadow">
+      <div class="mt-3 mx-4">
+        <h3 class="  fw-bold azul-text-primario ">Productos</h3>
+      </div>
+      <div class="m-3 row  gap-3 d-lg-flex align-items-center">
+        <form class=" col-auto  ">
+          <div class=" input-group">
+            <input id="buscar-producto" class="form-control" aria-label="Search" type="search"
+              placeholder="Buscar productos por Nombres o ID">
+            <button class="btn btn-primary input-group-tex fw-medium" type="submit">Search</button>
+          </div>
+        </form>
+        <div class=" col-auto text-center ">
+          <!-- Button trigger modal -->
+          <button class="btn btn-success gap-2 d-flex align-items-center fw-medium" type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            <i class='bx bxs-add-to-queue'></i>
+            <span>Agregar Producto</span> <!--Boton que dezpliega el formulario de agregar producto-->
+          </button>
+        </div>
+
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div>
+                <h1 class="modal-title azul-text-primario fs-5 fw-bold" id="staticBackdropLabel"> Nuevo Producto</h1>
+                <p class=" azul-text-primario text-decoration-underline mb-0"> Rellena los campos con la informacion del
+                  producto que deseas
+                  agregar</p>
+              </div>
+              <button type="button" class="btn-close align-self-start" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <!--Formulario agregar producto-->
+            <div class="modal-body">
+              <form id="form-producto" class="container d-grid gap-3">
+                <div class="row mt-2">
+                  <div class="col-12">
+                    <div class="form-text d-flex">
+                      <p class=" fw-semibold azul-text-primario mb-0">Código del producto</p>
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-text"><i class='bx bx-barcode'></i></span>
+                      <input type="text" id="codigo" class="form-control" placeholder="Eje 2342.." aria-label="Código del producto">
+                      <!--input codigo-->
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-text d-flex">
+                      <p class=" fw-semibold azul-text-primario mb-0">Nombre del producto</p>
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-text"><i class='bx bxl-product-hunt'></i></span>
+                      <input type="text" id="nombre" class="form-control" placeholder="Eje Macbook pro 2010"
+                        aria-label="Nombre del producto"> <!--input nombre del producto-->
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-text d-flex">
+                      <p class=" fw-semibold azul-text-primario mb-0">Elija una categoría</p>
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-text"><i class='bx bx-category'></i></span>
+                      <select id="categoria" class="form-select" aria-label="Categoría"> <!-- select categoria-->
+                        <option selected>Selecciona una categoría</option>
+                        <option value="tecnologia">Tecnología</option>
+                        <option value="oficina">Material de Oficina</option>
+                        <option value="software">Software</option>
+                        <option value="herramientas">Herramientas</option>
+                        <option value="mobiliario">Mobiliario</option>
+                      </select>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-text d-flex">
+                    <p class=" fw-semibold azul-text-primario mb-0">Stock</p>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class='bx bxl-product-hunt'></i></span>
+                      <input id="stock" type="text" class="form-control" placeholder="Eje 764" aria-label="Stock">
+                      <!--input stock-->
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-text d-flex ">
+                    <p class=" fw-semibold azul-text-primario mb-0">Precio del producto</p>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group">
+                      <span class="input-group-text">$</span>
+                      <input id="precio" type="text" class="form-control" placeholder="Eje 180.876" aria-label="Precio">
+                      <!--input precio-->
+                    </div>
+
+                  </div>
+                </div>
+              </form>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" id="btn-agregar-producto" class="btn btn-primary">Agregar Producto</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Tabla de productos-->
+      <div class="mx-2 mx-lg-5  mt-4 table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              
+            </tr>
+              <th scope="col">Codigo</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Stock</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+
+          <tbody id="tabla-productos" class="table-group-divider">
+           
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!--Script-->
+  <script src="../controllers/sidebar.js"></script><!--Menu lateral-->
+  <script src="../scripts/productos.js"></script>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="../scripts/productos.js"></script>
+</body>
+
+</html>
