@@ -58,7 +58,7 @@ Las funcionalidades destacadas del sistema.
 La seguridad avanzada que ofrece POS Express.
 La facilidad de uso y su interfaz amigable.
 
-#### ✅ Recomendaciones
+### ✅ Recomendaciones
 📱 La página está diseñada para verse correctamente en dispositivos móviles gracias a Bootstrap, así que puedes acceder desde tu celular o tablet sin problemas.
 ---
 
@@ -70,14 +70,7 @@ La facilidad de uso y su interfaz amigable.
 ![Inicio de sesion](screenshot/Inicio_de_sesion.jpeg)
 
 
-# 🔐 Redirección automática al cambiar contraseña
 
-> ⚠️ **Nota:** Por favor conservar la contraseña y el usuario anterior.
-
-- **Usuario:** `admin`  
-- **Contraseña:** `admin123`
-
----
 
 
 # 📊 POS Express - Dashboard Principal
