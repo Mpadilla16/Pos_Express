@@ -38,6 +38,12 @@ Te dirige al pie de página, donde encontrarás información para comunicarte co
 **Enlace:** `login.html`  
 Abre el formulario de inicio de sesión para ingresar al sistema si ya tienes una cuenta registrada.
 
+### 🧑 Usuario de prueba
+Puedes iniciar sesión con las siguientes credenciales:
+
+- **Usuario:** `admin`
+- **Contraseña:** `admin123`
+
 Sitio en vivo https://mpadilla16.github.io/Pos_Express/frontend/views/index.html
 
 ### Screenshot
@@ -54,30 +60,6 @@ La facilidad de uso y su interfaz amigable.
 
 #### ✅ Recomendaciones
 📱 La página está diseñada para verse correctamente en dispositivos móviles gracias a Bootstrap, así que puedes acceder desde tu celular o tablet sin problemas.
-
-### 🔐 Recuerda que para acceder al sistema debes contar con un usuario y contraseña válidos. Si no tienes uno, contacta con el administrador de POS Express.
-
-## 🔐 Iniciar Sesión en POS Express
-
-La plataforma incluye un sistema básico de autenticación para ingresar al entorno del punto de venta (POS). Esta funcionalidad está pensada para simular un inicio de sesión en un entorno real de sistema empresarial.
-
-### 🧑 Usuario de prueba
-Puedes iniciar sesión con las siguientes credenciales:
-
-- **Usuario:** `admin`
-- **Contraseña:** `admin123`
-
-### 🔁 Comportamiento del Login
-
-- Si los datos ingresados son correctos, el sistema mostrará una alerta informativa indicando que debes cambiar la contraseña.
-- Luego, serás redirigido automáticamente al formulario de recuperación/cambio de contraseña.
-
-> ⚠️ Este flujo simula un proceso de seguridad donde el usuario predeterminado debe actualizar sus credenciales.
-
-### 📍 Acceso al Login
-Puedes acceder al formulario de inicio de sesión desde la barra de navegación en la parte superior del sitio, haciendo clic en **"Iniciar Sesión"**.  
-Este enlace te lleva a: `login.html`
-
 ---
 
 ### 🧾 Descripción técnica
