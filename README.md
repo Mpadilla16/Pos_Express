@@ -82,8 +82,7 @@ Este enlace te lleva a: `login.html`
 
 ### 🧾 Descripción técnica
 - El formulario incluye campos para **usuario** y **contraseña**.
-- Está validado con JavaScript puro en el frontend.
-- No hay conexión a una base de datos ni backend, ya que es un prototipo funcional para entorno local.
+
 
 ### Screenshot
 ![Inicio de sesion](screenshot/Inicio_de_sesion.jpeg)
@@ -96,18 +95,8 @@ Este enlace te lleva a: `login.html`
 - **Usuario:** `admin`  
 - **Contraseña:** `admin123`
 
-Cuando se utiliza la contraseña predeterminada, el sistema redirige automáticamente al formulario **"Cambiar Contraseña"** como medida de seguridad.
-
 ---
 
-## 🛠️ Funcionalidad del formulario
-
-El formulario de cambio de contraseña permite ingresar dos campos:
-
-- **Nueva contraseña**
-- **Confirmar contraseña**
-![Cambio de contrasena](screenshot/Cambio_de_contrasena.jpeg)
----
 
 # 📊 POS Express - Dashboard Principal
 
